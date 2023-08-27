@@ -8,12 +8,20 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateChangingText() {
         const texts = ['mastery', 'brilliance', 'proficiency'];
         let currentIndex = 0;
-
-        setInterval(() => {
+    
+        // Initial delay of 1500ms
+        setTimeout(() => {
+          // Set the initial text
+          changingText.textContent = texts[currentIndex];
+          currentIndex = (currentIndex + 1) % texts.length;
+    
+          // Continue with regular interval of 3000ms
+          setInterval(() => {
             changingText.textContent = texts[currentIndex];
             currentIndex = (currentIndex + 1) % texts.length;
-        }, 2500);
-    }
+          }, 3000);
+        }, 1500);
+      }
 
     function updateCountdown() {
         setInterval(() => {

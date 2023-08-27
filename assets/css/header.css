@@ -1,0 +1,40 @@
+.header {
+    background-color: #10032b;
+    color: #feff9a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%; /* Header spans full width */
+    position: fixed; /* Fixed position for the header */
+    top: 0; /* Position the header at the top */
+    left: 0;
+    z-index: 1000; /* Ensure header is on top of other elements */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    max-height: 40px;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.header-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header-button:hover {
+    background-color: #f13a2a;
+}
