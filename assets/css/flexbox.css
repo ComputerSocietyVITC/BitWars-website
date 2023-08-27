@@ -1,5 +1,5 @@
 .blur-container {
-    position: absolute;
+    position:absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -12,16 +12,36 @@
     box-shadow: 0 0 20px #f13a2a, 0 0 30px #f13a2a; /* Updated color */
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-    max-width: calc(100vw - 60px);
+    width:90%;
+    max-width: calc(100vw - 10px);
     max-height: calc(100vh - 40px);
+    overflow:auto;
+    scrollbar-width: thin; /* For Firefox compatibility */
+    scrollbar-color: #f13a2a #232345;
+}
+.blur-container::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
 }
 
+.blur-container::-webkit-scrollbar-track {
+    background-color: #232345; /* Track background color */
+}
+
+.blur-container::-webkit-scrollbar-thumb {
+    background-color: #f13a2a; /* Thumb color */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.blur-container::-webkit-scrollbar-thumb:hover {
+    background-color: #feff9a; /* Thumb color on hover */
+}
 
 .heading {
     font-size: 24px;
     font-weight: bold;
     color: #d7b119;
     margin-bottom: 10px;
+    user-select: none;
 }
 
 .list {
@@ -35,6 +55,7 @@
     font-size: 16px;
     margin-top: 5px;
     color: #feff9a;
+    user-select: none;
 }
 
 .datetime {
