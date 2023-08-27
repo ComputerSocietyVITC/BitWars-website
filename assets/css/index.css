@@ -42,6 +42,10 @@ body {
     cursor: pointer;
 }
 
+.header {
+  flex-wrap:wrap-reverse;
+}
+
 .icon {
     display: inline-block;
     vertical-align: middle;
@@ -63,6 +67,11 @@ body {
     margin-top: 20px;
     font-weight: 900;
     color: rgb(221, 255, 227);
+    padding: 1%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);   
   }
 
   .countdownText {
@@ -118,12 +127,13 @@ body {
 /* s */
   
 
+
+
 .bitwars-logo{
-    width: 200px; /* Set the width of your logo */
-    height: auto;
-    top:0;
+    width: 50vh; /* Set the width of your logo */
+    height: 50vh;
+
     position: relative;
-    margin-left: 1%;
 }
 
 .vit-logo {
@@ -134,13 +144,6 @@ body {
     position:absolute;
     margin-left: 1%;
   }
-
-/* .ieeecs-logo-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 20px;
-  } */
   
 .ieeecs-logo {
     width: 100px; /* Set the width of your logo */
@@ -151,6 +154,24 @@ body {
     margin-right:1%;
  /* Maintain aspect ratio */
   }
+
+  /* .glass {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);    
+  } */
+
+
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    justify-content: center;
+}
 
 @media (max-width: 768px) {
     .body {

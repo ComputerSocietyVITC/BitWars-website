@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const endDate = new Date('2023-09-01T00:00:00').getTime();
 
     function updateChangingText() {
-        const texts = ['mastery', 'brilliance', 'proficiency'];
+        const texts = ['mastery.', 'brilliance.', 'proficiency.'];
         let currentIndex = 0;
     
         // Initial delay of 1500ms
