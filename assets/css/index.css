@@ -173,6 +173,21 @@ body {
     justify-content: center;
 }
 
+.flex-container {
+  display:flex;
+  flex-direction: row;
+  justify-content:flex;
+   /* Center vertically */
+  font-size: 18px;
+  margin-top: 20px;
+  color: white;
+}
+
+.register-button {
+  margin-left: 2%;
+  margin-right:2%;
+}
+
 @media (max-width: 768px) {
     .body {
       background-size: 50%; 
