@@ -6,23 +6,112 @@
 
   <link rel="icon" href="./assets/images/icon.png" type="image/svg"">
   <link rel="stylesheet" href="./assets/css/index.css" />
+  <link rel="stylesheet" href="./assets/css/header.css" />
+  <link rel="stylesheet" href="./assets/css/flexbox.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="./assets/js/countdown.js"></script>
 
 </head>
 
-<body onload="updateChangingText(); updateCountdown();">
-
+<body onload="updateCountdown(); updateChangingText();">
+  <div class="header" id="header">
     <div class="logo-container">
-        <img src="assets/icons/VIT Logo - White 1.svg" alt="TechLogo" class="vit-logo">
-        <img src="assets/icons/IEEE-CS_LogoTM-white 1.svg" alt="TechLogo" class="ieeecs-logo">
+        <img src="assets/icons/VIT Logo - White 1.svg" alt="LeftLogo" class="left-logo">
     </div>
-       
+    <div class="header-buttons">
+        <button class="header-button" id="showBlurButton0">About</button>
+        <button class="header-button" id="showBlurButton1">Sponsors</button>
+        <button class="header-button" id="showBlurButton2">Contact</button>
     </div>
+    <div class="logo-container">
+        <img src="assets/icons/IEEE-CS_LogoTM-white 1.svg" alt="RightLogo" class="right-logo">
+    </div>
+</div>
+<div class="blur-container" id="blurContainer0">
+    <div class="heading">About BitWars</div>
+    <div class="list">
+        <div class="list-item">Welcome to BitWars, where the digital battlefield awaits! BitWars is an adrenaline-fueled event that combines the best of both worlds - a hands-on coding session and intense competitive programming. Get ready to unleash your coding prowess and engage in epic coding duels!</div>
+    </div>
+    
+    <div class="heading">Event Highlights:</div>
+    <ul class="list">
+        <li class="list-item">2-Hour Hands-On Session: Jump right into the world of coding with a thorough two-hour interactive workshop. Whether you're just starting out and want to improve your skills or if you're a coding expert striving for perfection, this session is tailored to accommodate individuals at every skill level.</li>
+        <li class="list-item">Competitive Programming Showdown: Following the hands-on session, put your abilities to the ultimate test in our competitive programming showdown. Compete against other coders in a series of brain-teasing challenges and puzzles meant to test your coding skills.</li>
+        <li class="list-item">Expert Mentors: Learn from the best! We have a line-up of experienced mentors who will guide you through the hands-on session and provide valuable insights and tips to excel in competitive programming.</li>
+        <li class="list-item">Prizes and Recognition: The battle isn't just for honour; we have exciting prizes and certificates for the top performers. Show the world your coding prowess and earn recognition for your skills.</li>
+        <li class="list-item">Networking Opportunities: Connect with like-minded coders, expand your professional network, and forge lasting connections. BitWars is not just about competition; it's about building a community of passionate programmers.</li>
+    </ul>
+    
+    <div class="heading">Who Should Attend:</div>
+    <ul class="list">
+        <li class="list-item">Coding Enthusiasts</li>
+        <li class="list-item">Students who need to explore the domain</li>
+        <li class="list-item">Anyone looking to enhance their coding skills</li>
+        <li class="list-item">Competitive Programmers seeking a challenge</li>
+    </ul>
+    
+    <div class="heading">Date and Time:</div>
+    <div class="datetime">1st September 2023, 8:00 AM - 5:00 PM</div>
+</div>
 
-    <img src="assets/icons/BitWars_logo.svg" alt="BitWars_logo" class="bitwars-logo">
 
-    <p class="changing-text">Unleash your algorithmic <br><span>mastery</span></p>
+<div class="blur-container" id="blurContainer1">
+  <div class="heading">Powered by Coding Ninjas</div>
+    <div class="list">
+        <div class="list-item">BitWars owes its success to the invaluable support of our sponsors, Coding Ninjas.</div>
+        <div class="list-item">As a leading online tech learning platform, Coding Ninjas is synonymous with quality education in the world of coding and programming.</div>
+    </div>
+    <div class="heading">About Coding Ninjas:</div>
+    <div class="list">
+        <div class="list-item">Coding Ninjas stands out as an innovative online platform that has revolutionized the process of acquiring coding skills and achieving excellence.</div>
+        <div class="list-item">With a core mission to empower students, professionals, and coding enthusiasts alike, Coding Ninjas provides an extensive selection of courses, tutorials, and coding challenges, all thoughtfully crafted to unleash the maximum potential of every individual learner.</div>
+    </div>
+    <div class="heading">Join Us in Celebrating Coding Ninjas:</div>
+    <div class="list">
+        <div class="list-item">BitWars participants and attendees are invited to join us in celebrating Coding Ninjas for their unwavering commitment to tech education and innovation.</div>
+        <div class="list-item">Their support is instrumental in making BitWars a remarkable event.</div>
+    </div>
+    <div class="heading">Explore Coding Ninjas:</div>
+    <div class="list">
+        <div class="list-item">You can explore their wide array of courses and resources by visiting their website at <a href="https://www.codingninjas.com" style="color: #3dd9d6;">https://www.codingninjas.com</a>.</div>
+        <div class="list-item">BitWars takes immense pride in being powered by Coding Ninjas, and together, we are forging a future where coding excellence knows no limits.</div>
+        <div class="list-item">A heartfelt thank you to Coding Ninjas for making BitWars an extraordinary journey!</div>
+    </div>
+</div>
+
+<div class="blur-container" id="blurContainer2">
+  <div class="heading">Student Coordinators:</div>
+  <ul class="list">
+      <li class="list-item"><strong>Anvesha Singh - </strong> 7862007499</li>
+      <li class="list-item"><strong>Harshit Singh - </strong> 9085843067</li>
+  </ul>
+
+  <div>
+      <a href="https://www.instagram.com/comsoc.vitcc/"><img src="assets/icons/icons8-instagram.svg" alt="Instagram logo">
+      <p class="list-item"><strong>Instagram:</strong> @comsoc.vitcc</p></a>
+  </div>
+
+  <div>
+    <a href="https://twitter.com/ieeecsvitc"><img src="assets/icons/icons8-twitterx-50.png" alt="X logo">
+      <p class="list-item"><strong>X:</strong> @ieeecsvitc</p></a>
+  </div>
+
+  <div>
+    <a href="https://www.linkedin.com/company/ieee-computer-society-vit-chennai/"><img src="assets/icons/icons8-linkedin.svg" alt="LinkedIn logo">
+      <p class="list-item"><strong>LinkedIn:</strong> IEEE Computer Society - VITC</p></a>
+  </div>
+
+  <div>
+    <a href="https://ieeecsvitc.com/"><img src="assets/icons/IEEE-CS_LogoTM-white 1.svg" alt="IEEE logo">
+      <p class="list-item"><strong>Website</strong>IEEE Computer Society - VITC</p></a>
+  </div>
+
+
+</div>
+
+    <img src="assets/icons/BitWars_logo.svg" alt="BitWars_logo" class="bitwars-logo" id="bitwars">
+
+    <p id="changing-text-blur" class="changing-text">Unleash your algorithmic <br><span>mastery</span></p>
 
     <div class="countdown" id="countdown">
     </div>
@@ -30,8 +119,11 @@
         days &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hours &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         minutes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; seconds
     </div>
-    
-    <a href="#" class="register-button">Register Here</a>
+    <a href="https://www.vitchennaievents.com/conf1/index.php?eventid=1578" class="register-button">BitWars-Solo</a>
+    <a href="https://www.vitchennaievents.com/conf1/index.php?eventid=1579" class="register-button">BitWars-Duo</a>
+    <a href="https://www.vitchennaievents.com/conf1/index.php?eventid=1580" class="register-button">BitWars-Trio</a>
   </div>
+
+  <script src="./assets/js/flexbox.js"></script>
 </body>
 </html>
