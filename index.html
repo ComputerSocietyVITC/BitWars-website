@@ -7,24 +7,26 @@
   <link rel="stylesheet" href="./assets/css/index.css" />
   <link rel="stylesheet" href="./assets/css/header.css" />
   <link rel="stylesheet" href="./assets/css/flexbox.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
   <script src="./assets/js/countdown.js"></script>
 
 </head>
 
-<body onload="updateCountdown(); updateChangingText();">
-  <div class="header" id="header">
+<body>
+
+<div class="header" id="header">
     <div class="logo-container">
         <img src="assets/icons/VIT Logo - White 1.svg" alt="LeftLogo" class="left-logo">
     </div>
-    <div class="header-buttons">
-        <button class="header-button" id="showBlurButton0">About</button>
-        <button class="header-button" id="showBlurButton1">Sponsors</button>
-        <button class="header-button" id="showBlurButton2">Contact</button>
-    </div>
+
     <div class="logo-container">
         <img src="assets/icons/IEEE-CS_LogoTM-white 1.svg" alt="RightLogo" class="right-logo">
     </div>
+</div>
+<div class="header-buttons">
+    <button class="header-button" id="showBlurButton0">About</button>
+    <button class="header-button" id="showBlurButton1">Sponsors</button>
+    <button class="header-button" id="showBlurButton2">Contact</button>
 </div>
 <div class="blur-container" id="blurContainer0">
     <div class="heading">About BitWars</div>
@@ -107,8 +109,7 @@
 
 
 </div>
-
-    <img src="assets/icons/BitWars_logo.svg" alt="BitWars_logo" class="bitwars-logo" id="bitwars">
+    <img src="assets/icons/bitwars-logo.svg" alt="BitWars_logo" class="bitwars-logo" id="bitwars">
 
     <p id="changing-text-blur" class="changing-text">Unleash your algorithmic <br><span>mastery</span></p>
 
@@ -121,8 +122,6 @@
     <a href="https://www.vitchennaievents.com/conf1/index.php?eventid=1578" class="register-button">BitWars-Solo</a>
     <a href="https://www.vitchennaievents.com/conf1/index.php?eventid=1579" class="register-button">BitWars-Duo</a>
     <a href="https://www.vitchennaievents.com/conf1/index.php?eventid=1580" class="register-button">BitWars-Trio</a>
-
-  </div>
 
   <script src="./assets/js/flexbox.js"></script>
 </body>

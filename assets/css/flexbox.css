@@ -18,6 +18,7 @@
     overflow:auto;
     scrollbar-width: thin; /* For Firefox compatibility */
     scrollbar-color: #f13a2a #232345;
+    z-index: 1001;
 }
 .blur-container::-webkit-scrollbar {
     width: 10px; /* Width of the scrollbar */
