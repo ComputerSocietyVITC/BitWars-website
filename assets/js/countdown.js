@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const changingText = document.querySelector('.changing-text span');
     const countdownElement = document.getElementById('countdown');
-    const endDate = new Date('2023-08-31T08:45:00').getTime();
+    const endDate = new Date('2023-08-31T08:55:00').getTime();
 
     function updateChangingText() {
         const texts = ['mastery.', 'brilliance.', 'proficiency.'];
