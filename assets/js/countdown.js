@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const changingText = document.querySelector('.changing-text span');
     const countdownElement = document.getElementById('countdown');
-    const endDate = new Date('2023-08-31T12:45:00').getTime();
+    const endDate = new Date('2023-08-31T16:40:00').getTime();
 
     function updateChangingText() {
         const texts = ['mastery.', 'brilliance.', 'proficiency.'];
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (seconds > 0){
               countdownElement.innerHTML = `${days.toString().padStart(2, '0')} : ${hours.toString().padStart(2, '0')} : ${minutes.toString().padStart(2, '0')} : ${seconds.toString().padStart(2, '0')}`;
             } else if (seconds <0) {
-              countdownElement.innerHTML = 'Round 1 will be ending now...';
+              countdownElement.innerHTML = 'Round 2 has ended!';
             }
         }, 1000);
     }
